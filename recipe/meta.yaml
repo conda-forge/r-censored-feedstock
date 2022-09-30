@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/censored_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/censored/censored_{{ version }}.tar.gz
-  sha256: 09ae0d26649d49239d0a2a028fe96f01b93e460ec8f2043ca531cd98962048c7
+  sha256: 966296aa73b1a1841dc32127e6df3e7e004daf269c014e7725a6d4bc433ae8a0
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -63,10 +63,7 @@ test:
 about:
   home: https://github.com/tidymodels/censored
   license: MIT
-  summary: Engines for survival models from the 'parsnip' package. These include parametric models
-    (e.g., Jackson (2016) <doi:10.18637/jss.v070.i08>), semi-parametric (e.g., Simon
-    et al (2011) <doi:10.18637/jss.v039.i05>), and tree-based models (e.g., Buehlmann
-    and Hothorn (2007) <doi:10.1214/07-STS242>).
+  summary: Engines for survival models from the 'parsnip' package. These include parametric models (e.g., Jackson (2016) <doi:10.18637/jss.v070.i08>), semi-parametric (e.g., Simon et al (2011) <doi:10.18637/jss.v039.i05>), and tree-based models (e.g., Buehlmann and Hothorn (2007) <doi:10.1214/07-STS242>).
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
