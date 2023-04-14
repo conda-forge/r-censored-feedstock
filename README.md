@@ -1,11 +1,11 @@
-About r-censored
-================
+About r-censored-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-censored-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/tidymodels/censored
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-censored-feedstock/blob/main/LICENSE.txt)
 
 Summary: Engines for survival models from the 'parsnip' package. These include parametric models (e.g., Jackson (2016) <doi:10.18637/jss.v070.i08>), semi-parametric (e.g., Simon et al (2011) <doi:10.18637/jss.v039.i05>), and tree-based models (e.g., Buehlmann and Hothorn (2007) <doi:10.1214/07-STS242>).
 
