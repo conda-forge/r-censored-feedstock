@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/censored_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/censored/censored_{{ version }}.tar.gz
-  sha256: 966296aa73b1a1841dc32127e6df3e7e004daf269c014e7725a6d4bc433ae8a0
+  sha256: 860ed2c2d017c49563ade23fafed88f7607e2e5a689bf994f7611d02c47045df
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
