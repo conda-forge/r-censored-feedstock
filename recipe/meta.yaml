@@ -26,6 +26,7 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-cli
     - r-dials
     - r-dplyr >=0.8.0.1
     - r-generics
@@ -34,7 +35,7 @@ requirements:
     - r-lifecycle
     - r-mboost
     - r-parsnip >=1.1.0
-    - r-prettyunits
+    - r-prodlim >=2023.03.31
     - r-purrr
     - r-rlang >=1.0.0
     - r-survival >=3.3_1
@@ -42,6 +43,7 @@ requirements:
     - r-tidyr >=1.0.0
   run:
     - r-base
+    - r-cli
     - r-dials
     - r-dplyr >=0.8.0.1
     - r-generics
@@ -50,7 +52,7 @@ requirements:
     - r-lifecycle
     - r-mboost
     - r-parsnip >=1.1.0
-    - r-prettyunits
+    - r-prodlim >=2023.03.31
     - r-purrr
     - r-rlang >=1.0.0
     - r-survival >=3.3_1
