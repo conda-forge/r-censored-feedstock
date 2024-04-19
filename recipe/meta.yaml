@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/censored_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/censored/censored_{{ version }}.tar.gz
-  sha256: 860ed2c2d017c49563ade23fafed88f7607e2e5a689bf994f7611d02c47045df
+  sha256: 5e8ac2947a01eaa0cf4d24364f529bad3705b0342433cd06b6d953266b32ef9b
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -26,6 +26,7 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-cli
     - r-dials
     - r-dplyr >=0.8.0.1
     - r-generics
@@ -34,7 +35,7 @@ requirements:
     - r-lifecycle
     - r-mboost
     - r-parsnip >=1.1.0
-    - r-prettyunits
+    - r-prodlim >=2023.03.31
     - r-purrr
     - r-rlang >=1.0.0
     - r-survival >=3.3_1
@@ -42,6 +43,7 @@ requirements:
     - r-tidyr >=1.0.0
   run:
     - r-base
+    - r-cli
     - r-dials
     - r-dplyr >=0.8.0.1
     - r-generics
@@ -50,7 +52,7 @@ requirements:
     - r-lifecycle
     - r-mboost
     - r-parsnip >=1.1.0
-    - r-prettyunits
+    - r-prodlim >=2023.03.31
     - r-purrr
     - r-rlang >=1.0.0
     - r-survival >=3.3_1
