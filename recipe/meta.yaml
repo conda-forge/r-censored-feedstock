@@ -1,4 +1,4 @@
-{% set version = "0.3.5" %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/censored_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/censored/censored_{{ version }}.tar.gz
-  sha256: 73c98c51cb386b5613e7d5bebf41607e618037820deabd0db46959e81d36d766
+  sha256: ecf01a12f6a98dc9cf41d2b7536d4dbc72c5bac60e9fba6ce15326320ef3cdd3
 
 build:
   number: 0
